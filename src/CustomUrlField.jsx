@@ -15,13 +15,9 @@ const styles = {
 }
 
 const CustomUrlField = (props) => {
-    // console.log('CustomUrlField props: ', props)
-    // const record = useRecordContext();
-    // console.log('CustomUrlField record: ', record)
     return props.record ? (
         <a href={props.record[props.source]} className={props.classes.link}>
             {`${props.record[props.source]}_CUSTOM`}
-            {/*{`${props.record[props.source]}_${props.record.username}`}*/}
             <LaunchIcon className={props.classes.icon} />
         </a>
     ) : null;
