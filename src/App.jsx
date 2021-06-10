@@ -10,9 +10,9 @@ fetch('https://jsonplaceholder.typicode.com/todos')
     .then(json => console.log('all todos: ', json))
 
 const App = () => <Admin dataProvider={dataProvider}>
-    <Resource name="users" list={UserList} />
     <Resource name="posts" list={PostList} />
-    <Resource name="todos" list={ListGuesser} />
+    <Resource name="users" list={UserList} />
+    {/*<Resource name="todos" list={ListGuesser} />*/}
 </Admin>
 
 export default App;
